@@ -101,13 +101,13 @@
 								<input class="file-path validate" type="text">
 							</div>
 						</div>
-
-						 
-
+ 
 						<button class="btn waves-effect waves-light floatright"
 							type="button" name="uploadimage" id="uploadimage">
 							Submit <i class="material-icons right">send</i>
 						</button>
+						
+						<div id="status" style="font-size: 12px; color: red; text-align: center; "></div>
 
 					</div>
 
@@ -144,11 +144,10 @@
 	<script type="text/javascript">
 	
 	$( document ).ready(function() {
-		alert(window.location.hostname);
+		//alert(window.location.hostname);
 	});
 	
 	var address = window.location.href;
-	
 	console.log(" address is "+address);
 	
 	var formattedUrl = 'http://'+window.location.hostname+':'+window.location.port+'/WebAppEC2/uploadFile';
